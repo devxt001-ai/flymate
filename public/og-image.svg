@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6"/>
+      <stop offset="1" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <g transform="translate(100,150)">
+    <rect x="0" y="0" width="1000" height="330" rx="24" fill="rgba(255,255,255,0.15)"/>
+    <g transform="translate(60,60)">
+      <path d="M60 160 l160-140 h90 l-70 120 l170 25 l120 90 l-90 30 l-150-60 l-120 90 h-80 l80-130 l-170-25 z" fill="#fff" opacity="0.95"/>
+    </g>
+    <text x="360" y="140" font-family="Poppins, Arial, sans-serif" font-size="72" fill="#ffffff" font-weight="700">FlyMate</text>
+    <text x="360" y="210" font-family="Poppins, Arial, sans-serif" font-size="32" fill="#f0fdf4">Book flights, hotels, trains & holidays</text>
+  </g>
+</svg>

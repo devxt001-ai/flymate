@@ -38,6 +38,7 @@
   --sidebar-accent-foreground: oklch(1 0 0);
   --sidebar-border: oklch(0.92 0.01 240);
   --sidebar-ring: oklch(0.55 0.2 240);
+  color-scheme: light;
 }
 
 .dark {
@@ -73,6 +74,7 @@
   --sidebar-accent-foreground: oklch(0.12 0.02 240);
   --sidebar-border: oklch(0.3 0.02 240);
   --sidebar-ring: oklch(0.65 0.18 200);
+  color-scheme: dark;
 }
 
 @theme inline {
@@ -122,5 +124,32 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .brand-shine {
+    background-image: linear-gradient(90deg, var(--foreground), var(--primary), var(--secondary));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: brand-shine 8s linear infinite;
+  }
+  @keyframes brand-shine {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+  .gradient-underline { position: relative; }
+  .gradient-underline::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -6px;
+    width: 160px;
+    height: 2px;
+    background-image: linear-gradient(90deg, var(--primary), var(--secondary));
+    border-radius: 999px;
   }
 }
